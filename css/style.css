@@ -151,9 +151,9 @@ body{
 }
 
 .section-list-li{
-   background-color: #FFFFFF;   
+   /* background-color: #FFFFFF;   
    list-style-type: none;
-   margin-right: 24px;
+   margin-right: 24px; */
    width: calc((100% - 72px) / 4);
    flex-basis: calc((100% - 72px) / 4);
 }
@@ -217,7 +217,7 @@ body{
     margin-bottom: 72px;
 }
 
-.team-list-li {
+.team-list .team-list-li {
     padding-top: 50px;
     margin-right: 24px;
     width: calc((100% - 72px) / 4);
