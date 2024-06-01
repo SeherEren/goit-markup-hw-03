@@ -166,7 +166,7 @@ body{
     border: 0;
     padding: 0;
     white-space: nowrap;
-    clip: rect(0 0 0 0);  
+    clip-path: inset(100%);  
     clip: rect(0 0 0 0);
     overflow: hidden; 
 }
@@ -228,7 +228,7 @@ body{
 
 .team-list .team-list-li{
     width: calc((100% - 72px) / 4);
-    flex-basis: calc((100% - 3 * 24px) / 4);
+    flex-basis: calc((100% - 72px) / 4);
     background-color: #FFFFFF;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.88);
     border-radius: 0px 0px 4px 4px;
@@ -256,7 +256,7 @@ body{
 
 .our-portfolio{
     background-color:#FFFFFF ;
-    padding-top: 120px 0;
+    padding-top: 120px;
     width: 1440px;
     height: 732px;
    }  
@@ -285,7 +285,6 @@ img{
     border:1px solid #e7e9fc;
     border-top: none;
     margin-bottom: 8px;
-
 }
 
 .our-portfolio-title{
