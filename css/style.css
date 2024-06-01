@@ -252,10 +252,21 @@ body{
 
 .our-portfolio{
     background-color:#FFFFFF ;
-    padding-top: 120px 0;
+    padding: 120px 0;
     width: 1440px;
     height: 732px;
    }  
+  
+.our-portfolio-title{
+    font-weight: 700px;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2E2F42;
+    text-transform: capitalize;
+    margin-bottom: 72px;
+}  
    
 .portfolio-list{
     display: flex;
@@ -280,18 +291,6 @@ img{
     padding: 32px 16px;
     border:1px solid #e7e9fc;
     border-top: none;
-}
-
-.our-portfolio-title{
-    font-weight: 700px;
-    font-size: 36px;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    text-align: center;
-    color: #2E2F42;
-    text-transform: capitalize;
-    margin-bottom: 72px;
-    margin-bottom: 8px;
 }
 
 .our-portfolio-name{
