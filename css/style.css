@@ -225,7 +225,7 @@ body{
     margin-bottom: 72px;
 }
 
-.team-list-li {
+.our-container .team-list .team-list-li {
     padding-top: 50px;
     margin-right: 24px;
     width:calc((100% - 72px) / 4);
