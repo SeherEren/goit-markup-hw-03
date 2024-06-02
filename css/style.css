@@ -17,23 +17,48 @@ body{
      
 }
 
+.container{
+    width: 1460px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+/* header*/
+
 .page-header {
     border-bottom: 1px solid #e7e9fc ;
 }
 
 .header-container {
     display: flex;
-    width: 1158px;
     height: 72px;
     margin: 0 auto;
     background-color: #E7E9FC;  
     padding: 0 15px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .header-navbar{
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 .header-logo{
@@ -54,13 +79,13 @@ body{
 
 .header-list{
     display: flex;
-    justify-content:space-between ;
+    /* justify-content:space-between ; */
     width: 100%;
     list-style-type: none;
     gap: 40px;
 }
 
-.header-list .detay{
+.detay{
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
@@ -89,7 +114,8 @@ body{
     gap:40px;  
 }
 
-.address-list-li .detay{
+.detay{
+    font-size: 16px;
     letter-spacing: 0.02em;
     line-height: 1.5;
     color:#434455 ;
@@ -101,23 +127,28 @@ body{
     color: #404bbf;
 }
 
+/*Slider */
+
 .slider{
-    /* width: 1440px;
-    height: 600px; */
     background-color:#2E2F42;
     padding: 188px 0;
+}
+
+.slider-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 .slider-title{
     text-align: center;
     color: #FFFFFF;
-    font-weight: 700px;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    padding: 10px 472px;
     max-width: 496px;
-
 }
 
 .button{ 
@@ -134,10 +165,7 @@ body{
     display: block;
     min-width: 169px;
     height: 56px;
-    border: none;
-    margin-left:600px;
-    
-    gap: 10px;
+    border: none;   
 }
 
 .button:hover,
@@ -146,11 +174,11 @@ body{
     color: #404BBF;    
 }
 
+/*section - visually-hidden */
+
 .section{
     background-color: #FFFFFF;   
     padding:120px 0;
-    width: 1440px;
-    height: 150px;
 }
 
 .section-list{
@@ -159,9 +187,7 @@ body{
 }
 
 .section-list-li{
-   /* background-color: #FFFFFF;   
-   list-style-type: none;
-   margin-right: 24px; */
+   list-style-type: none; 
    width: calc((100% - 72px) / 4);
    flex-basis: calc((100% - 72px) / 4);
 }
@@ -182,25 +208,24 @@ body{
 .section-title{   
     font-weight: 500;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 1.2;
     letter-spacing: 0.02em;
     color:#2E2F42 ;
     margin-bottom: 8px;
     text-decoration: none;
 }
 
-.section-description{    
-    font-weight: 400px;
+.section-description{     
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
 
 }
 
+/* Bölüm 3: Our Team */
+
 .our-team{
-    width: 1440px;
-    height: 732px;
     background-color:#F4F4FD;
     text-align: center;
     padding:120px 0;
@@ -220,20 +245,16 @@ body{
     letter-spacing: 0.02em;
     text-align: center;
     color: #2E2F42;
-    text-transform: capitalize;
-    padding-top: 80px;
+    text-transform: capitalize; 
     margin-bottom: 72px;
 }
 
-.our-container .team-list .team-list-li {
-    padding-top: 50px;
-    margin-right: 24px;
+.team-list-li {
     width:calc((100% - 72px) / 4);
-    flex-basis: calc((100% - 72px) / 4);
-    background-color: #FFFFFF;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.88);
+    /* flex-basis: calc((100% - 72px) / 4); */
+    box-shadow: 0px 1px 3px rgba(46, 47, 66, 0.3);
     border-radius: 0px 0px 4px 4px;
-    flex-direction: column;
+    
 }
 
 .li-container{
@@ -259,12 +280,11 @@ body{
     color: #434455;
 }
 
+/* Bölüm 4: Our Portfolio */
+
 .our-portfolio{
     background-color:#FFFFFF ;
     padding: 120px 0;
-    width: 1440px;
-    height: 1300px;
-;
    }  
   
 .our-portfolio-title{
@@ -283,17 +303,11 @@ body{
     flex-wrap: wrap;
     list-style-type: none;
     column-gap:24px;
-    padding:50px;
     row-gap:48px
 } 
 
-img{
-    display: block;
-}
-
-.portfolio-list .portfolio-list-li{
-    width: calc((100% - 48px) / 3);
-
+.portfolio-list-li{
+    /* width: calc((100% - 48px) / 3); */
 }
 
 .portfolio-list-li-container{
@@ -302,7 +316,7 @@ img{
     border-top: none;
 }
 
-.our-portfolio .our-portfolio-name{
+.our-portfolio-name{
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
